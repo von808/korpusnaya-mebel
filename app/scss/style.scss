@@ -37,9 +37,33 @@
 }
 .logo{
   &-full{
-    max-width: 202px;
-    height: 100%;
+    display: block;
+    min-width: 202px;
+    height: 60px;
     margin-right: 37px;
+    
+    background-repeat: no-repeat;
+    background-size: 59px 59px;
+    background-position: left center;
+    padding: 6px 0 0 19px;
+  }
+  &__title{
+    color: #2A2A2A;
+    font-size: 22px;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 4px;
+  }
+  &__subtitle{
+    color: rgba(0, 0, 0, 0.80);
+    font-size: 12px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+    letter-spacing: -0.24px;
   }
 }
 .address{
@@ -476,6 +500,25 @@
     align-items: center;
     padding-right: 108px;
     height: 227px;
+  }
+  &__logo{
+    display: block;
+    min-width: 202px;
+    height: 60px;
+    margin-right: 37px;
+    
+    background-repeat: no-repeat;
+    background-size: 59px 59px;
+    background-position: left center;
+    padding: 16.58px 0 16.58px 24px;
+  }
+  &__logo-title{
+    color: #FFF;
+    font-size: 22px;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
   }
 }
 .copyright{
