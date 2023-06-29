@@ -6,16 +6,18 @@
 
 
 .header{
+  min-height: 100px;
   &__inner{
     width: 100%;
-    min-height: 78px;
+    min-height: 60px;
+    padding: 20px 0;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: space-between
   }
   &__left{
     display: flex;
-    align-items: flex-end;
+    align-items: center;
   }
   &__text{
     color: rgba(42, 42, 42, 0.80);
@@ -30,7 +32,7 @@
   }
   &__right{
     display: flex;
-    align-items: flex-end;
+    align-items: center;
   }
 }
 .logo{
@@ -38,14 +40,6 @@
     max-width: 202px;
     height: 100%;
     margin-right: 37px;
-  }
-  &-bottom{
-    color: rgba(0, 0, 0, 0.80);
-    font-size: 12px;
-    font-family: $montserrat;
-    line-height: 110%;
-    letter-spacing: -0.24px;
-    margin: 3px 17px 0 4px;
   }
 }
 .address{
@@ -89,16 +83,17 @@
 }
 
 .intro{
+  overflow-x: hidden;
   &__inner{
-    min-height: 833px;
+    min-height: 533px;
     background-repeat: no-repeat;
     background-size: 859px 525px;
     background-position: 605px 134px;
-    background-position: 103% 134px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    background-position: 103% 45px;
     margin-right: -275px;
+  }
+  &__content{
+    padding-top: 134px;
   }
   &__title{
     color: #2B2B2B;
@@ -123,10 +118,11 @@
 }
 
 .products{
-  background-image: url(../images/bg-1.png);
+  background-image: url(../images/bg-2.png);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-size: 100% 100%;
+  background-position: center 30px;
+  padding-top: 171px;
   &__inner{
     padding: 50px 0 80px 0;
   }
@@ -208,7 +204,7 @@
 }
 
 .partners{
-  padding: 220px 0 133px;
+  padding: 220px 0 0;
   &__slider{
     padding: 114px 0;
   }
@@ -220,7 +216,7 @@
     box-shadow: 5px 5px 0px 0px #515151;
     text-align: center;
     padding: 26px 30px;
-    margin: 5px 0;
+    margin: 5px auto;
   }
   &__item-title{
     color: #2A2A2A;
@@ -248,6 +244,13 @@
   }
 }
 
+.bg-4{
+  background-image: url(../images/bg-4.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: 0 30px;
+  padding: 133px 0 1px;
+}
 .services{
   margin-bottom: 214px;
   &__items{
@@ -272,6 +275,7 @@
   }
   &__item-img{
     display: block;
+    border-radius: 50%;
     margin: 0 auto 28px;
   }
   &__item-title{
@@ -298,9 +302,11 @@
   &__items{
     padding: 110px 0 0 0;
     display: grid;
+    width: 100%;
+    align-self: stretch;
     grid-template-columns: repeat(3, 377px);
     grid-template-rows: 545px 334px;
-    gap: 20px 33px;
+    gap: 20px;
   }
   &__item{
     border-radius: 50px;
@@ -328,8 +334,8 @@
   }
   &__item-img{
     &--1{
-      width: 282px;
-      height: 818px;
+      width: 277px;
+      height: 810px;
       object-fit: cover;
       border-radius: 43px;
       border: 3px solid rgba(255, 255, 255, 0.30);
@@ -390,7 +396,7 @@
     left: 65%;
     transform: translateX(-45%);
     width: 603px;
-    min-height: 445px;
+    min-height: 340px;
     border-radius: 50px;
     background: #FFF;
     padding: 61px 38px 59px 84px;
@@ -398,8 +404,9 @@
   &__title{
     margin: 0 0 45px -45px;
   }
-  &__phone{
+  &__item{
     display: inline-block;
+    width: 100%;
     color: #2A2A2A;
     font-size: 24px;
     font-family: Montserrat;
@@ -409,6 +416,8 @@
     margin-bottom: 20px;
     padding-left: 51px;
     position: relative;
+  }
+  &__phone{
     &::before{
       content: '';
       position: absolute;
@@ -424,16 +433,6 @@
     }
   }
   &__address{
-    display: inline-block;
-    color: #2A2A2A;
-    font-size: 24px;
-    font-family: Montserrat;
-    font-weight: 600;
-    line-height: 160%;
-    letter-spacing: -0.48px;
-    margin-bottom: 20px;
-    padding-left: 51px;
-    position: relative;
     &::before{
       content: '';
       position: absolute;
@@ -449,16 +448,6 @@
     }
   }
   &__mail{
-    display: inline-block;
-    color: #2A2A2A;
-    font-size: 24px;
-    font-family: Montserrat;
-    font-weight: 600;
-    line-height: 160%;
-    letter-spacing: -0.48px;
-    margin-bottom: 48px;
-    padding-left: 51px;
-    position: relative;
     &::before{
       content: '';
       position: absolute;
@@ -472,6 +461,9 @@
       background-size: contain;
       background-position: center;
     }
+  }
+  &__socials{
+    width: 100%;
   }
   &__socials--link{
     margin-right: 13.27px;
@@ -492,6 +484,7 @@
   color: #959595;
   font-size: 22px;
   font-family: $gilroy;
+  text-align: center
 }
 
 
